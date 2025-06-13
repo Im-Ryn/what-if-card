@@ -12,12 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card-container">
-            <img src="" class="box1" id="question">
-        <div class="container">    
-            <div id="changecard" onclick="randomizeimage()">ChangeQ</div>
+    <div class="container">
+        <div class="card" id="card">
+            <div id="front" class="front"></div>
+            <div id="back" class="back"></div>
         </div>
     </div>
+    <div class="button-container">
+        <div id="flip-btn">Flip-Card</div>
+        <div id="flip-btn1" onclick="randomizeimage()">Ganti</div>
+    </div>
+
+
+    <!-- <div class="card-container">
+            <img src="" class="box1" id="question">
+        
+    </div> -->
     <script src="card.js"></script>
 </body>
 </html>
