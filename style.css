@@ -1,0 +1,87 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    position: relative;
+}
+
+#box1{
+    height: 300px;
+    width: 210px;
+    position: absolute;
+    animation-name: none;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transition: transform 0.5s ease;
+}
+
+
+#box2{
+    height: 300px;
+    width: 210px;
+    /* transform: rotate(-17deg); */
+    position: absolute;
+    animation-name: none;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transition: transform 0.5s ease;
+}
+
+#box3{
+    height: 300px;
+    width: 210px;
+    position: absolute;
+    animation-name: none;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.left{
+    transform: translateX(-95px) rotate(-17deg) translateY(13px);
+    z-index: 1;
+}
+
+.center{
+    transform: translateX(0) rotate(0) translateY(0);
+    z-index: 3;
+}
+
+.right{
+    transform: translateX(95px) rotate(17deg) translateY(13px);
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+}
