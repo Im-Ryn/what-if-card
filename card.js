@@ -2,8 +2,8 @@ const card_used = []
 
 const randomizeimage = () => {
     let image_number = Math.floor(Math.random() * 30);
-    if((card_number[image_number] in card_used) == false){
-        card_used.push(card_number[image_number])
+    if((image_number in card_used) == false){
+        card_used.push(image_number)
         document.getElementById("back").style.backgroundImage = `url('Assets/Card/Pertanyaan/Pertanyaan(${image_number}).jpg')` 
         document.getElementById("front").style.backgroundImage = `url('Assets/Card/Pertanyaan/cover/cover(${image_number}).jpg')`
     }
